@@ -5,7 +5,7 @@ const chat = require('./chat');
 
 server([
 
-    get('/', file ('./index.html')),
+    get('/', file ('./public/index.html')),
 
     socket('login', chat.login),
     socket('message', chat.message),
